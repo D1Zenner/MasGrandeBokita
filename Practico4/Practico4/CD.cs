@@ -11,7 +11,7 @@ namespace Practico4
     {
         public CD ()
         {
-            puto = 15;
+            puto = 150;
         }
     }
 }

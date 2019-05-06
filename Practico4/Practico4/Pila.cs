@@ -8,11 +8,11 @@ namespace Practico4
 {
     class Pila
     {
-        private int gei = 0;
+        private int ges = 0;
 
         public Pila (int gei)
         {
-            gei = 210;
+            ges = 210;
         }
     }
 }

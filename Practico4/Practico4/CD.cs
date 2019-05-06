@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Practico4
 {
-    private int puto = 10;
+    private int D;
     class CD
     {
         public CD ()
         {
-            puto = 150;
+            D = 150;
         }
     }
 }

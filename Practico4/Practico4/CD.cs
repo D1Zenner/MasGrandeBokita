@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Practico4
 {
-    private int D;
+    
     class CD
     {
+        private int D;
         public CD ()
         {
             D = 150;

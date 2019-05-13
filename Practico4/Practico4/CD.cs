@@ -9,10 +9,11 @@ namespace Practico4
     
     class CD
     {
-        private int D;
+        private int puto = 10;
+
         public CD ()
         {
-            D = 150;
+            puto = 70;
         }
     }
 }

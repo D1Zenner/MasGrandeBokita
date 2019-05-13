@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practico4
 {
+<<<<<<< HEAD
     class Pila
     {
         private int tope = -1;

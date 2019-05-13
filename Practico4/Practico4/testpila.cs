@@ -25,10 +25,15 @@ namespace Practico4
             CD disco4 = new CD("Party", "Lunatiks", 3);
             CD disco5 = new CD("Fight", "Doom", 3);
 
+            DVD dvd1 = new DVD("Moonlight", "Mashups", 2);
+
+            Cassette cassette1 = new Cassette("Bloody Tears", "Belmonts", 1);
+
+
             pila1.Push(disco1);
-            pila1.Push(disco2);
+            pila1.Push(dvd1);
             pila1.Push(disco3);
-            pila1.Push(disco4);
+            pila1.Push(cassette1);
             pila1.Push(disco5);
 
 

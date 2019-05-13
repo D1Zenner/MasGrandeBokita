@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cassette.cs" />
     <Compile Include="CD.cs" />
+    <Compile Include="DVD.cs" />
+    <Compile Include="Medios.cs" />
     <Compile Include="Pila.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

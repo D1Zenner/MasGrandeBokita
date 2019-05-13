@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Practico4
 {
-
-    class CD : Medios
+    class Cassette : Medios
     {
-        public CD(string titulo, string interprete, int duracion) : base(titulo, interprete, duracion)
+        public Cassette(string titulo, string interprete, int duracion) : base(titulo, interprete, duracion)
         {
         }
     }

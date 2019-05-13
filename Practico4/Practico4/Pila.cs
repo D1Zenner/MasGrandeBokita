@@ -10,33 +10,33 @@ namespace Practico4
     {
         private int tope = -1;
         private int tamaño;
-        private CD[] listadediscos;
+        private Medios[] listadetemas;
 
         public Pila (int t)
         {
             tamaño = t;
-            listadediscos = new CD[t];
+            listadetemas = new Medios[t];
         }
 
         //Metodos
-        public void Push (CD c)
+        public void Push (Medios c)
         {
             if (tope < tamaño - 1)
             {
                 tope += 1;
-                listadediscos[tope] = c;
+                listadetemas[tope] = c;
             }
         }
 
-        public CD Pop ()
+        public Medios Pop ()
         {
             tope -= 1;
-            return listadediscos[tope + 1];
+            return listadetemas[tope + 1];
         }
 
-        public CD Peek()
+        public Medios Peek()
         {
-            return listadediscos[tope];
+            return listadetemas[tope];
         }
 
         public bool IsEmpty()

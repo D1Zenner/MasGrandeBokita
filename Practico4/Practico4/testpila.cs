@@ -10,18 +10,35 @@ namespace Practico4
     {
         static void Main(string[] args)
         {
-            string[] pila1 = new string[5] { "disco1", "disco2", "disco3", "disco4", "disco5" };
+            /*
+            string[] pila1 = new string[5];
             string[] pila2 = new string[5];
+            */
+
+            Pila pila1 = new Pila(5);
+
+            CD disco1 = new CD("Groove", "Michael", 20);
+            CD disco2 = new CD("Night", "Juan", 5);
+            CD disco3 = new CD("Dance", "Rockets", 2);
+            CD disco4 = new CD("Party", "Lunatiks", 3);
+            CD disco5 = new CD("Fight", "Doom", 3);
+
+            pila1.Push(disco1);
+            pila1.Push(disco2);
+            pila1.Push(disco3);
+            pila1.Push(disco4);
+            pila1.Push(disco5);
 
             Console.WriteLine("");
 
-            for (int i = 0; i < pila1.Length; i++)
+            for (int i = 0; i < pila1.; i++)
             {
                 Console.WriteLine("discos de pila 1:" + pila1[i]);
             }
 
             Console.WriteLine("");
 
+            /*
             pila1.CopyTo(pila2, 0);
             for (int i = 0; i < pila2.Length; i++)
             {
@@ -37,6 +54,9 @@ namespace Practico4
             }
           
             Console.ReadKey();
+            */
+
+
         }
     }
 }

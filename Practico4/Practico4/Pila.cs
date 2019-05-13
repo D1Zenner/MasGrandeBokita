@@ -8,9 +8,9 @@ namespace Practico4
 {
     class Pila
     {
-        private int tope = -1;
-        private int tamaño;
-        private Medios[] listadetemas;
+        public int tope = -1;
+        public int tamaño;
+        public Medios[] listadetemas;
 
         public Pila (int t)
         {

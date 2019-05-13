@@ -18,6 +18,7 @@ namespace Practico4
             Pila pila1 = new Pila(5);
             Pila pila2 = new Pila(5);
             Pila pilaAux = new Pila(5);
+            PilaAvanzada pila3 = new PilaAvanzada(5);
 
             CD disco1 = new CD("Groove", "Michael", 20);
             CD disco2 = new CD("Night", "Juan", 5);
@@ -36,7 +37,6 @@ namespace Practico4
             pila1.Push(cassette1);
             pila1.Push(disco5);
 
-
             while (!pila1.IsEmpty())
             {
                 pilaAux.Push(pila1.Pop());
@@ -52,9 +52,19 @@ namespace Practico4
                 Console.WriteLine(pila2.Pop().Titulo);
             }
 
+            pila3.Push(disco1);
+            pila3.Push(dvd1);
+            pila3.Push(disco3);
+            pila3.Push(cassette1);
+            pila3.Push(disco5);
+
+            Console.WriteLine(pila3.Search("Moonlight"));
+            Console.WriteLine(pila3.Search("bloody tears")); //En este caso el tema esta con letras mayusculas, por lo tanto deberia devolver false.
 
 
-            
+
+
+
 
 
             /*

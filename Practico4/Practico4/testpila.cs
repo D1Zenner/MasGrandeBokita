@@ -16,6 +16,8 @@ namespace Practico4
             */
 
             Pila pila1 = new Pila(5);
+            Pila pila2 = new Pila(5);
+            Pila pilaAux = new Pila(5);
 
             CD disco1 = new CD("Groove", "Michael", 20);
             CD disco2 = new CD("Night", "Juan", 5);
@@ -29,16 +31,35 @@ namespace Practico4
             pila1.Push(disco4);
             pila1.Push(disco5);
 
-            Console.WriteLine("");
 
-            for (int i = 0; i < pila1.; i++)
+            while (!pila1.IsEmpty())
+            {
+                pilaAux.Push(pila1.Pop());
+            }
+
+            while (!pilaAux.IsEmpty())
+            {
+                pila2.Push(pilaAux.Pop());
+            }
+
+            while (!pila2.IsEmpty())
+            {
+                Console.WriteLine(pila2.Pop().Titulo);
+            }
+
+
+
+            
+
+
+            /*
+            for (int i = 0; i < pila1.Length; i++)
             {
                 Console.WriteLine("discos de pila 1:" + pila1[i]);
             }
 
             Console.WriteLine("");
 
-            /*
             pila1.CopyTo(pila2, 0);
             for (int i = 0; i < pila2.Length; i++)
             {
@@ -52,9 +73,9 @@ namespace Practico4
             {
                 Console.WriteLine("discos de pila 1:" + pila1[i]);
             }
-          
-            Console.ReadKey();
             */
+            Console.ReadKey();
+            
 
 
         }

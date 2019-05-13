@@ -18,26 +18,7 @@ namespace Practico4
             listadediscos = new CD[t];
         }
 
-        //Gets y Sets
-        public int Tope
-        {
-            get { return tope; }
-            set { Tope = value; }
-        }
-
-        public int Tamaño
-        {
-            get { return tamaño; }
-            set { Tamaño = value; }
-        }
-
-        public CD[] Listadediscos
-        {
-            get { return listadediscos; }
-            set { Listadediscos = value; }
-        }
-
-
+        //Metodos
         public void Push (CD c)
         {
             if (tope < tamaño - 1)
